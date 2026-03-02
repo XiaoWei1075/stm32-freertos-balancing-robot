@@ -1,0 +1,34 @@
+balancedrobot\dma.o: ../Core/Src/dma.c
+balancedrobot\dma.o: ../Core/Inc/dma.h
+balancedrobot\dma.o: ../Core/Inc/main.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+balancedrobot\dma.o: ../Core/Inc/stm32f1xx_hal_conf.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Include/core_cm3.h
+balancedrobot\dma.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Include/cmsis_version.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+balancedrobot\dma.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+balancedrobot\dma.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+balancedrobot\dma.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h

@@ -1,0 +1,45 @@
+balancedrobot\common_porting.o: ..\Drivers\BMI160_Core\Src\common_porting.c
+balancedrobot\common_porting.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+balancedrobot\common_porting.o: ../Core/Inc/i2c.h
+balancedrobot\common_porting.o: ../Core/Inc/main.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+balancedrobot\common_porting.o: ../Core/Inc/stm32f1xx_hal_conf.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Include/core_cm3.h
+balancedrobot\common_porting.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Include/cmsis_version.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+balancedrobot\common_porting.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+balancedrobot\common_porting.o: D:\Program Files\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+balancedrobot\common_porting.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+balancedrobot\common_porting.o: ../Drivers/BMI160_Core/Inc/common_porting.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+balancedrobot\common_porting.o: ../Core/Inc/FreeRTOSConfig.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+balancedrobot\common_porting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

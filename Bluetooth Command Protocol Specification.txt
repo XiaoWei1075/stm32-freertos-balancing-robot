@@ -1,0 +1,146 @@
+Bluetooth Information
+Device Name: HC-06
+Bluetooth Type: Classic Bluetooth
+Pairing PIN: 1234
+
+Command Format
+
+Format:
+[Command Character][Value];
+
+Separator:
+Multiple commands should be separated by a semicolon “;”.
+A semicolon at the end of a single command is optional, but required when sending multiple commands consecutively.
+
+Value Format:
+Supports integer, floating-point, and negative numbers.
+
+Whitespace:
+Whitespace characters (space, tab) can be inserted anywhere and are optional.
+
+————————————————————
+Basic Control Commands
+
+These commands control the robot’s motion state, speed, and turning behavior.
+
+t — Start
+No parameter.
+Enables motor output and resets internal timers.
+Example:
+t
+
+s — Stop
+No parameter.
+Disables motor output (Disable STBY).
+Example:
+s
+
+z — Zero
+No parameter.
+Resets target velocity and target turning rate to zero (stand upright in place).
+Example:
+z
+
+v — Target Velocity
+Sets the linear target velocity.
+Positive values: forward
+Negative values: backward
+Example:
+v5
+
+g — Target Angular Velocity
+Sets the target yaw angular velocity (unit: °/s).
+Example:
+g-30
+
+————————————————————
+Real-Time PID Parameter Tuning
+
+These commands allow real-time adjustment of PID parameters without reflashing firmware.
+
+Velocity Loop
+
+0 — Ve_Kp
+Velocity loop proportional gain (controls response speed)
+
+1 — Ve_Ki
+Velocity loop integral gain (reduces steady-state error)
+
+Balance Loop
+
+2 — balance_Kp
+Balance loop proportional gain (determines restoring strength)
+
+3 — balance_Kd
+Balance loop derivative gain (controls damping, suppresses high-frequency oscillation)
+
+Turn & Yaw Loop
+
+4 — turn_Kp
+Turning loop proportional gain (controls rotational sensitivity)
+
+5 — turn_Kd
+Turning loop derivative gain (controls rotational damping)
+
+6 — yaw_Kp
+Yaw loop proportional gain (corrects heading deviation during straight motion)
+
+7 — yaw_Kd
+Yaw loop derivative gain (suppresses oscillatory “snake-like” motion)
+
+Coupling Coefficients
+
+8 — vc_to_ta_stand
+Velocity-to-tilt conversion coefficient when standing in place
+(affects anti-disturbance capability)
+
+9 — vc_to_ta_move
+Velocity-to-tilt conversion coefficient when moving
+(affects pitch amplitude during acceleration/deceleration)
+
+————————————————————
+System Query Command
+
+p — Print Parameters
+Prints all current system states and PID parameters via Bluetooth.
+
+————————————————————
+Command Combination Examples
+
+The parser supports sending multiple commands in a single string.
+Commands are executed sequentially when encountering “;”.
+
+Scenario 1: Safe Startup Test
+Command:
+2 565; 3 30; t
+
+Explanation:
+Set balance_Kp to 565 and balance_Kd to 30, then enable the motors.
+
+Scenario 2: Constant Speed with Parameter Adjustment
+Command:
+v 1; 1 0.02
+
+Explanation:
+Set target velocity to 1, and increase velocity loop Ki to 0.02.
+
+Scenario 3: Emergency Stop
+Command:
+s
+
+Explanation:
+Immediately disables motor driver.
+
+Scenario 4: Circular Motion
+Command:
+v -5; g -30
+
+Explanation:
+Set linear velocity to -5 and angular velocity to -30, resulting in circular motion.
+
+Scenario 5: Return to Upright State
+Command:
+z
+
+Explanation:
+Resets motion targets and maintains upright balance.

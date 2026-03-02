@@ -1,0 +1,50 @@
+Power-On Procedure
+
+When turning on the power switch, the robot must be positioned at its balance point to ensure correct accelerometer gravity calibration.
+
+After power-on, the robot must remain completely stationary for approximately 1.2 seconds until the motors start and the control loop begins operating.
+
+During this period, the system performs gyroscope bias calibration. Any motion will disturb zero-offset calibration and degrade control performance.
+
+Control Interface
+
+The robot can only be controlled via Bluetooth.
+
+Battery Voltage Indicator
+
+The blue LED on the development board indicates battery voltage level.
+
+The faster the LED blinks, the lower the ADC-measured supply voltage.
+
+The LED blinking period is approximately proportional to the ADC-measured voltage.
+
+If the ADC-measured voltage is 12V:
+LED cycle period = 2 seconds (1s ON, 1s OFF)
+
+If the blue LED remains constantly ON or OFF and stops blinking, the program has stopped running and the system must be restarted.
+
+Command Unit Calibration
+
+The linear velocity and angular velocity values entered via Bluetooth are not calibrated to physical units (m/s or °/s).
+
+They indicate relative speed magnitude and direction only.
+
+A strictly linear relationship between set values and measured values is not guaranteed.
+
+Parameter Persistence
+
+Bluetooth command parameters are not written into Flash memory.
+
+All tuned parameters are lost after power-off.
+
+Rotation Limitation
+
+The robot cannot rotate in place.
+
+Protection Mechanism
+
+The system includes a protection routine.
+
+If the pitch angle exceeds +45° or drops below -45°, the motors are disabled automatically.
+
+If the motors run uncontrollably, power should be immediately turned off to prevent motor damage.
